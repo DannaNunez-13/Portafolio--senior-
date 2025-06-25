@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portafolio de Danna</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header Disney Interactivo -->
+  <header class="header-disney text-white text-center py-5 position-relative overflow-hidden">
+    <div class="stars-bg"></div>
+    <img src="https://pngimg.com/d/dora_the_explorer_PNG19.png" alt="Dora saludando" class="dora-bg">
+    <div class="container position-relative z-2">
+      <div class="d-flex flex-column flex-md-row justify-content-center align-items-center mb-3 gap-3">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/3/3e/Disney%2B_logo.svg" alt="Disney Logo" class="disney-logo me-3">
+        <div>
+          <h1 class="fw-bold animate__animated animate__bounceIn">¡Bienvenido al Mundo Disney de Danna!</h1>
+          <p class="lead animate__animated animate__fadeInUp animate__delay-1s">Explora la magia con Dora la Exploradora y tus personajes favoritos</p>
+        </div>
+      </div>
+      <nav class="nav justify-content-center mt-3 animate__animated animate__fadeInUp animate__delay-2s">
+        <a class="nav-link text-white" href="#sobre-mi">Sobre mí</a>
+        <a class="nav-link text-white" href="#portafolio">Portafolio</a>
+        <a class="nav-link text-white" href="#contacto">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Estrellas en todo el portafolio -->
+  <div class="stars-bg global-stars"></div>
+
+  <!-- Secciones -->
+  <section id="sobre-mi" class="container py-5">
+    <h2 class="mb-4 animate__animated animate__pulse animate__infinite">Sobre mí</h2>
+    <p class="dynamic-text">¡Hola! Soy Danna, una exploradora creativa y profesional amante del mundo Disney...</p>
+  </section>
+
+  <!-- 6 Galerías Dinámicas Disney -->
+  <section id="portafolio" class="container py-5">
+    <h2 class="mb-4 animate__animated animate__pulse animate__infinite">Mi Portafolio Disney</h2>
+    <div class="row g-4">
+      <!-- Galería 1: Mickey Mouse -->
+      <div class="col-md-4">
+        <div class="gallery-card">
+          <img src="https://cdn.pixabay.com/photo/2016/03/31/19/56/mickey-mouse-1298782_1280.png" class="w-100 rounded" alt="Mickey Mouse">
+          <div class="gallery-caption">Mickey Mouse</div>
+          <button class="btn btn-disney mt-2 animate__animated animate__rubberBand">Ver más</button>
+        </div>
+      </div>
+      <!-- Galería 2: Elsa -->
+      <div class="col-md-4">
+        <div class="gallery-card">
+          <img src="https://images.pexels.com/photos/3770580/pexels-photo-3770580.jpeg" class="w-100 rounded" alt="Elsa">
+          <div class="gallery-caption">Elsa (Frozen)</div>
+          <button class="btn btn-disney mt-2 animate__animated animate__rubberBand">Ver más</button>
+        </div>
+      </div>
+      <!-- Galería 3: Buzz Lightyear -->
+      <div class="col-md-4">
+        <div class="gallery-card">
+          <img src="https://cdn.pixabay.com/photo/2017/01/31/13/14/avatar-2026510_1280.png" class="w-100 rounded" alt="Buzz Lightyear">
+          <div class="gallery-caption">Buzz Lightyear</div>
+          <button class="btn btn-disney mt-2 animate__animated animate__rubberBand">Ver más</button>
+        </div>
+      </div>
+      <!-- Galería 4: Moana -->
+      <div class="col-md-4">
+        <div class="gallery-card">
+          <img src="https://images.pexels.com/photos/3770582/pexels-photo-3770582.jpeg" class="w-100 rounded" alt="Moana">
+          <div class="gallery-caption">Moana</div>
+          <button class="btn btn-disney mt-2 animate__animated animate__rubberBand">Ver más</button>
+        </div>
+      </div>
+      <!-- Galería 5: Simba -->
+      <div class="col-md-4">
+        <div class="gallery-card">
+          <img src="https://cdn.pixabay.com/photo/2017/01/31/13/14/avatar-2026510_1280.png" class="w-100 rounded" alt="Simba">
+          <div class="gallery-caption">Simba (El Rey León)</div>
+          <button class="btn btn-disney mt-2 animate__animated animate__rubberBand">Ver más</button>
+        </div>
+      </div>
+      <!-- Galería 6: Stitch -->
+      <div class="col-md-4">
+        <div class="gallery-card">
+          <img src="https://cdn.pixabay.com/photo/2017/01/31/13/14/avatar-2026510_1280.png" class="w-100 rounded" alt="Stitch">
+          <div class="gallery-caption">Stitch</div>
+          <button class="btn btn-disney mt-2 animate__animated animate__rubberBand">Ver más</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacto" class="bg-light py-5">
+    <div class="container">
+      <h2 class="mb-4 animate__animated animate__pulse animate__infinite">Contacto</h2>
+      <form>
+        <div class="mb-3">
+          <label for="nombre" class="form-label">Nombre</label>
+          <input type="text" class="form-control" id="nombre" required>
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" class="form-control" id="email" required>
+        </div>
+        <div class="mb-3">
+          <label for="mensaje" class="form-label">Mensaje</label>
+          <textarea class="form-control" id="mensaje" rows="3" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary animate__animated animate__heartBeat">Enviar</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer Disney Interactivo -->
+  <footer class="footer-disney text-white text-center py-4 position-relative overflow-hidden">
+    <div class="stars-bg"></div>
+    <div class="container position-relative z-2">
+      <div class="d-flex justify-content-center align-items-center mb-2 gap-2">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/3/3e/Disney%2B_logo.svg" alt="Disney Logo" class="disney-logo-footer me-2">
+        <span class="dynamic-text">© 2024 Danna Nuñez | Portafolio Disney</span>
+      </div>
+      <small class="dynamic-text">¡Gracias por explorar mi portafolio mágico!</small>
+    </div>
+  </footer>
+
+  <!-- Bootstrap y animaciones -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html> 

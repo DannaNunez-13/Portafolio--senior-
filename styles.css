@@ -1,0 +1,235 @@
+/* Estilos personalizados para el portafolio de Danna */
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: linear-gradient(135deg, #e0f7fa 0%, #b2ebf2 100%);
+  min-height: 100vh;
+  color: #263238;
+}
+
+.header-mascotas {
+  background: linear-gradient(120deg, #4fc3f7 0%, #01579b 100%);
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+.header-content {
+  position: relative;
+  z-index: 2;
+}
+.header-pet-img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #b2ebf2;
+  background: #fff;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 12px #01579b44;
+}
+.animate-bounce {
+  animation: bounce 2s infinite alternate;
+}
+@keyframes bounce {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-18px); }
+}
+.animate-text {
+  animation: colorChange 3s infinite alternate;
+}
+@keyframes colorChange {
+  0% { color: #fff; text-shadow: 0 0 8px #4fc3f7; }
+  100% { color: #b2ebf2; text-shadow: 0 0 16px #01579b; }
+}
+
+.text-cool {
+  color: #01579b !important;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+.text-cool:hover {
+  color: #4fc3f7 !important;
+}
+
+.avatar-danna {
+  width: 110px;
+  height: 110px;
+  object-fit: cover;
+  border: 4px solid #4fc3f7;
+  background: #fff;
+}
+
+section {
+  border-radius: 18px;
+  margin-bottom: 32px;
+  box-shadow: 0 2px 12px rgba(1,87,155,0.08);
+  background: #fff;
+}
+
+.header-title, .header-lead {
+  color: #fff;
+  text-shadow: 0 2px 12px #01579b, 0 0 8px #4fc3f7;
+  letter-spacing: 1px;
+}
+
+.sobre-mi-section {
+  background: #e0f7fa;
+  border-radius: 24px;
+  box-shadow: 0 4px 24px #01579b22;
+  margin-top: 48px;
+  margin-bottom: 48px;
+  padding: 48px 32px;
+}
+.sobre-mi-title {
+  color: #01579b;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.sobre-mi-text {
+  color: #263238;
+  font-size: 1.2rem;
+}
+.sobre-mi-highlight {
+  color: #0288d1;
+  font-weight: bold;
+  background: #b2ebf2;
+  border-radius: 8px;
+  padding: 2px 8px;
+}
+.sobre-mi-img {
+  width: 100%;
+  max-width: 320px;
+  border: 4px solid #4fc3f7;
+  background: #fff;
+  box-shadow: 0 2px 12px #01579b44;
+}
+
+.gallery-card {
+  background: #e0f7fa;
+  border-radius: 18px;
+  box-shadow: 0 2px 12px #4fc3f744;
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+  position: relative;
+  cursor: pointer;
+  text-align: center;
+  padding-bottom: 24px;
+  z-index: 2;
+  border: 2px solid #b2ebf2;
+}
+.gallery-card:hover {
+  transform: scale(1.07) rotate(-2deg);
+  box-shadow: 0 8px 32px #01579b33;
+  border-color: #0288d1;
+}
+.gallery-caption {
+  background: rgba(1,87,155,0.85);
+  color: #fff;
+  text-align: center;
+  padding: 8px 0;
+  font-weight: bold;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+  letter-spacing: 1px;
+}
+.gallery-img {
+  max-height: 200px;
+  object-fit: cover;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px #4fc3f744;
+  margin-bottom: 0.5rem;
+  border: 2px solid #b2ebf2;
+}
+.btn-cool {
+  font-size: 1.1rem;
+  font-weight: bold;
+  padding: 12px 28px;
+  border-radius: 30px;
+  background: linear-gradient(90deg, #01579b 0%, #4fc3f7 100%);
+  color: #fff;
+  border: none;
+  box-shadow: 0 2px 12px #01579b44;
+  transition: background 0.3s, color 0.3s, transform 0.2s;
+  margin-top: 12px;
+  z-index: 3;
+}
+.btn-cool:hover {
+  background: #fff;
+  color: #01579b;
+  transform: scale(1.1) rotate(2deg);
+  box-shadow: 0 6px 24px #01579b33;
+}
+
+.footer-mascotas {
+  background: linear-gradient(90deg, #01579b 0%, #4fc3f7 100%);
+  color: #fff;
+  box-shadow: 0 -2px 12px #01579b33;
+  position: relative;
+}
+.footer-avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 2px solid #b2ebf2;
+  background: #fff;
+  object-fit: cover;
+  box-shadow: 0 2px 8px #4fc3f744;
+}
+.footer-link {
+  margin: 0 10px;
+  font-size: 1.1rem;
+  color: #b2ebf2 !important;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.footer-link:hover {
+  color: #fff !important;
+  text-shadow: 0 0 8px #4fc3f7;
+}
+.footer-copy {
+  font-size: 1rem;
+  font-weight: 500;
+}
+.modal-content {
+  border-radius: 18px;
+  box-shadow: 0 4px 24px #01579b33;
+}
+
+.header-bg-img {
+  background-image: url('https://cdn.pixabay.com/photo/2017/09/25/13/12/dog-2785074_1280.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  min-height: 400px;
+}
+.header-overlay {
+  position: absolute;
+  top: 0; left: 0; width: 100%; height: 100%;
+  background: rgba(1, 87, 155, 0.55);
+  z-index: 1;
+  pointer-events: none;
+  border-radius: 0 0 32px 32px;
+}
+.header-bg-img .container {
+  position: relative;
+  z-index: 2;
+}
+.header-content {
+  position: relative;
+  z-index: 3;
+}
+
+.gallery-title {
+  color: #01579b;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-shadow: 0 2px 12px #b2ebf2, 0 0 8px #4fc3f7;
+}
+.contacto-title {
+  color: #0288d1;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-shadow: 0 2px 12px #b2ebf2, 0 0 8px #4fc3f7;
+} 
